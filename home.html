@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- <style>
+         * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }html{
+        scroll-behavior: smooth;
+      }
+      .navbar-img{
+        width: 50px;
+        height: 50px;
+            top: 0px;
+            border-radius: 40px;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+      
+        padding: 10px 30px;
+        background-color:white;;
+          width: 100%;
+            height: 80px;
+            align-items: center;
+            gap: 50px;
+            border: 2px solid  black;
+             position: sticky;
+            top: 0;
+            z-index: 10;
+        
+      }
+      .nav-left {
+        display: flex;
+        gap:20px;
+        align-items: center;
+      }
+
+      #nav-right {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+        
+        .nav-left>a{
+             text-decoration:none;
+            color: black;
+            font-family:Arial, sans-serif ;
+          
+        }
+
+      #search {
+       
+          width: 250px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: white;
+            padding: 5px 5px;
+            color: black;
+            border: 2px solid white;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+      } .se{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+           left: 91%;
+           top: 25px;
+      }
+        #count{
+            position: relative;
+        }
+       #cart{
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+       }
+        #cart-count{
+             position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px; 
+    border-radius: 50%;
+        }
+        .star{
+            background-color: #198754;
+            width: 100%;
+            height: 70px;
+            color: white;
+             display: flex;
+             font-family: "Alegreya SC", serif;
+             align-items: center;
+           padding:20px;
+            position: relative;
+            
+        }.star b{
+           position: absolute;
+           top: 20px;
+           left: 100px;
+           font-size: 25px;
+           cursor: pointer;
+        }
+        .know{
+            position: absolute;
+           left: 90%;
+           top: 20px;
+           color: white;
+           text-decoration: none;
+        }
+      
+       
+    body {
+      font-family: Arial, sans-serif;
+         background-color: #f5f5f5;
+       
+       
+          margin: 0px;
+          padding: 0px;
+}
+      .slider {
+        margin-left: 50px;
+        margin-top: 5%;
+        position: relative;
+      }
+      .all {
+        position: absolute;
+        left: 15%;
+        top: 10%;
+      }
+      .bucks {
+        position: absolute;
+        left: 15%;
+        top: 20%;
+      }
+      .frd {
+        position: absolute;
+        left: 15%;
+        top: 22%;
+      }
+     
+
+      /* Slider container */
+      .slider {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        margin-top: 5%;
+      }
+
+      /* Slide wrapper */
+      .command {
+        position: relative;
+        left: 22px;
+        width: 90%;
+        height: 700px;
+        background-color: white;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Individual slide */
+      .con {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: opacity 0.8s ease-in-out;
+        opacity: 0;
+        z-index: 1;
+      }
+
+      /* Active slide */
+      .con.active {
+        display: block;
+        opacity: 1;
+        z-index: 2;
+      }
+
+      /* Slide content */
+      .con img {
+        position: absolute;
+        left: 65%;
+        top: 1%;
+        width: 600px;
+        height: 600px;
+      }
+
+      .con h1 {
+        font-size: 60px;
+        font-family: "Alegreya SC", serif;
+        font-weight: 500;
+        font-style: normal;
+        position: absolute;
+        left: 3%;
+        top: 15%;
+        animation: slideDown 1.2s ease-out;
+      }
+
+      span {
+        color: #198754;
+      }
+
+      .con p {
+        font-size: 25px;
+        font-family: "Alegreya SC", serif;
+        font-style: normal;
+        color: black;
+        position: absolute;
+        left: 3%;
+        top: 45%;
+        animation: fadeIn 2.5s ease-in;
+      }
+
+      .knowmore {
+        background-color: green;
+        font-family: "Alegreya SC", serif;
+        color: white;
+        width: 150px;
+        height: 50px;
+        border-radius: 20px;
+        position: absolute;
+        left: 3%;
+        top: 60%;
+        cursor: pointer;
+      }
+
+      /* Optional animations */
+      @keyframes slideDown {
+        0% {
+          transform: translateY(-30px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      .selectors {
+        display: flex;
+        height: 500px;
+        width: 90%;
+        justify-content: space-between;
+        position: relative;
+        align-items: center;
+        margin-left: 20px;
+      }
+
+      .best img {
+        display: flex;
+
+        border-radius: 100px;
+        height: 150px;
+        width: 150px;
+      }
+      .ice {
+        align-items: center;
+        justify-content: space-around;
+        margin-left: 100px;
+      }
+
+      .background img {
+        background-color: none;
+        height: 500px;
+        width: 300px;
+      }
+      .product {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+        font-family: "Alegreya SC", serif;
+        font-size: 25px;
+      }
+      a {
+        text-decoration: none;
+      }
+      #recommand {
+        display: flex;
+        width: 100%;
+        height: 500px;
+        background-color: #198754;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .recod h1 {
+        text-align: center;
+        font-family: "Alegreya SC", serif;
+        font-size: 40px;
+      }
+      .main {
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+        padding: 20px;
+        height: 500px;
+        justify-content: center;
+        background-color: #198754;
+        align-items: center;
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        height: 250px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        padding: 20px;
+        position: relative;
+      }
+
+      .cutimage {
+        display: inline;
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+        position: absolute;
+        top: 40px;
+      }
+      b {
+        font-size: 15px;
+        text-align: center;
+        color: black;
+        font-family: SoDoSans_Semibold, Helvetica, sans-serif !important;
+        position: absolute;
+        top: 50px;
+        left: 140px;
+      }
+      .cal {
+        font-size: 12px;
+        text-align: center;
+        position: absolute;
+        top: 75px;
+        left: 140px;
+        font-family: Pike_Regular, Helvetica, sans-serif;
+        color: darkgray;
+      }
+      .dis {
+        justify-content: center;
+        text-align: center;
+        position: absolute;
+        top: 100px;
+        left: 140px;
+        font-family: SoDoSans_Light, Helvetica, sans-serif !important;
+        color: var(--bs-card-color);
+        font-size: 12px;
+        text-align: var(--bs-body-text-align);
+        -webkit-text-size-adjust: 100%;
+      }
+
+      .price {
+        position: absolute;
+        top: 200px;
+        left: 135px;
+        font-size: 20px;
+      }
+
+      button {
+        width: 100px;
+        height: 40px;
+        border-radius: 30px;
+        color: white;
+        cursor: pointer;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 190px;
+        left: 320px;
+        background-color: #198754;
+      }
+      .stre {
+        text-align: center;
+        background-color: #198754;
+        color: black;
+        font-family: "Alegreya SC", serif;
+        font-size: 40px;
+      }
+      .coffeworld {
+        height: 600px;
+        width: 100%;
+        position: relative;
+      }
+      .world {
+        background-color: #edebe9;
+        position: absolute;
+        top: 50px;
+        height: 600px;
+        width: 100%;
+      }
+      .world p {
+        position: absolute;
+        top: 4%;
+        left: 1%;
+        font-size: 35px;
+        font-family: "Alegreya SC", serif;
+      }
+      .world a {
+        position: absolute;
+        left: 90%;
+        color: rgba(0, 132, 255, 0.649);
+        text-decoration: none;
+        top: 6%;
+      }
+
+      .spacing {
+        height: 100px;
+      }
+      .footer {
+        height: 700px;
+        width: 100%;
+        background-color: #198754;
+        position: relative;
+      }
+      .footer-insider {
+        display: flex;
+        font-size: 15px;
+        color: black;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 102px;
+        position: absolute;
+
+        left: 20%;
+      }
+      .footer-insider a {
+        font-size: 1.125em;
+        color: #fff;
+        font-family: "Alegreya SC", serif;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .f {
+        display: flex;
+        color: white;
+        font-size: 25px;
+        font-family: "Alegreya SC", serif;
+      }
+      .quick {
+        margin-top: 100px;
+      }
+      .our {
+        margin-bottom: 10px;
+      }
+      .About {
+        margin-bottom: 20px;
+      }
+      .media {
+        margin-bottom: 70px;
+      }
+      .ins {
+        border-radius: 50%;
+        display: flex;
+        height: 50px;
+        width: 50px;
+        display: inline;
+      }
+      .copy {
+        position: absolute;
+        top: 90%;
+        left: 25%;
+      }
+      video {
+        position: absolute;
+        bottom: 5px;
+        width: 100%;
+        height: 500px;
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="nav">
+   
+      <div class="nav-left">
+       
+       <a href="">
+          <img class="navbar-img"
+          
+            src="../image/starbucks.png"
+            alt=""
+          /> </a>
+        <a class="n" href="./home.html">Home</a><a class="n" href="#selectors">Menu</a
+        ><a class="n" href="#world">Coffe </a><a class="n" href="#footer">About us</a
+        ><a class="n" href="#footer">Contact us</a>
+        
+      </div>
+      <div id="nav-right">
+        <input
+          type="text"
+          placeholder="looking for something specific?"
+          id="search"
+        />
+        <a href="#" onclick="searchFunction()">
+          <img class="se" src="../image/search.png" alt="" />
+        </a>
+
+       
+        <div id="count">
+        <img id="cart" src="../image/cart.png" alt="" />
+        <span id="cart-count">0</span>
+        </div>
+      </div>
+    </div>
+ 
+ 
+    <div class="star">
+     <b>Starbucks</b>
+     <a class="" href="">
+         <p class="know">Know More</p>
+     </a>
+     
+    </div>
+      <div class="slider">
+        <div class="command">
+          <div class="con">
+            <img
+              src="../image/adbda759-2ad7-4fec-bc56-7b45e4f8feab.png"
+              alt=""
+            />
+            <h2>
+              Where Every Sip Tells a Story <br />
+              Every Cup, A Work of Art In <span>Starbucks</span>
+            </h2>
+            <p>
+              At Starbucks, we believe coffee is more than just a beverage—it's
+              a lifestyle. <br />Every cup is crafted with care, blending rich
+              flavors, premium ingredients, <br />and a touch of passion.
+              Whether you're savoring your favorite espresso....
+            </p>
+            <button class="knowmore">know More</button>
+          </div>
+          <div class="con">
+            <img
+              src="../image/bf782aa0-97dc-4f19-bf10-31294100ddae.png"
+              alt=""
+            />
+            <h2>
+              Start Your Story With a Sip <br />
+              Because every day deserves a meaningful <br />
+              beginning. <span>Starbucks</span>
+            </h2>
+            <br />
+            <p>
+              At Starbucks, we believe coffee is more than just a beverage—it's
+              a lifestyle. <br />Every cup is crafted with care, blending rich
+              flavors, premium ingredients, <br />and a touch of passion.
+              Whether you're savoring your favorite espresso....
+            </p>
+            <button class="knowmore">know More</button>
+          </div>
+        </div>
+
+        <div class="selectors" id="selectors">
+          <div class="best">
+            <a href="bestdeal.html">
+              <img
+                class="best"
+                src="../image/caramel-frappuccino-1563813549.avif"
+                alt=""
+              />
+              <p class="product">Bestseller</p>
+            </a>
+          </div>
+
+          <div class="best">
+            <a href="drinks.html">
+              <img src="../image/Drinks.jpg" alt="" />
+              <p class="product">Drinks</p>
+            </a>
+          </div>
+
+          <div class="best">
+            <a href="foods.html">
+              <img src="../image/chicken salad.png" alt="" />
+              <p class="product">Food</p>
+            </a>
+          </div>
+
+          <div class="best">
+            <a href="coffe.html">
+              <img src="../image/chip.webp" alt="" />
+              <p class="product">Coffe</p>
+            </a>
+          </div>
+
+          <div class="best">
+            <a href="merchandise.html">
+              <img
+                src="../image/starbucks-stainless-steel-cup-with-wire-handle-capacity-12-fl-oz-354-ml-coffee-or-tea-mug.jpeg"
+                alt=""
+              />
+              <p class="product">Merchandise</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <h1 class="stre">Starbucks Recommends</h1>
+      <div id="recommand"></div>
+      <div class="coffeworld">
+        <div class="world" id="world">
+          <p>Learn more about the world of coffee!</p>
+          <video controls muted loop autoplay>
+            <source src="../image/How To_ AeroPress®.mp4" />
+          </video>
+          <a href="https://www.youtube.com/starbucks">Discover More?</a>
+        </div>
+      </div>
+
+      <div class="spacing"></div>
+      <div class="footer" id="footer">
+        <div class="footer-insider">
+          <div class="About">
+            <p class="f">About Us</p>
+            <br />
+            <a href=""> Our Heritage </a><br /><br />
+            <a href=""> Coffeehouse</a><br /><br />
+            <a href="">Our Company</a><br /><br />
+          </div>
+          <div class="our">
+            <p class="f">Responsibility</p>
+            <br />
+            <a href=""> Diversity </a><br /><br />
+            <a href=""> Community</a><br /><br />
+            <a href=""> Ethical Sourcing</a><br /><br />
+            <a href=""> Environmental Stewardship </a><br />
+          </div>
+          <div class="quick" >
+            <p class="f">Quick Line</p>
+            <br />
+            <a href=""> Privacy Policy</a><br /><br />
+            <a href=""> FAQs </a><br /><br />
+            <a href="">Customer Service</a><br /><br />
+            <a href=""> Delivery </a><br /><br />
+            <a href=""> Loyalty Program Terms and Conditions </a><br /><br />
+            <a href="">Beverage Subscription </a><br /><br />
+            <a href=""> Starbucks India Mobile App Terms of Use </a><br />
+          </div>
+
+          <div class="media">
+            <p class="f">Social Media</p>
+            <br />
+            <div class="mediainner">
+            <a href=""> <img class="ins" src="../image/insta.png" alt=""/></a
+            >&nbsp;
+            <a href="">
+              <img class="ins" src="../image/facebook.png" alt="" /> </a
+            >&nbsp;
+            <a href="">
+              <img class="ins" src="..\image\twitter.png" alt="" /> </a
+            ><br /><br />
+            </div>
+          </div>
+        </div>
+        <br />
+        <p
+          class="copy"
+          style="color: white; text-align: center; letter-spacing: 2px"
+        >
+          Copyright ©2024 Starbucks Coffee Company. All rights reserved.
+        </p>
+        <br />
+      </div>
+
+      <script>
+        //searching to find element
+          const searchInput = document.getElementById('search');
+  const noResultsMessage = document.getElementById('noResults');
+
+  searchInput.addEventListener('input', function () {
+    const searchValue = this.value.toLowerCase();
+    const productCards = document.querySelectorAll('.card');
+    let anyVisible = false;
+
+    productCards.forEach(card => {
+      const name = card.querySelector('b').innerText.toLowerCase();
+
+      if (name.includes(searchValue)) {
+        card.style.display = 'flex'; // or 'block'
+        anyVisible = true;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  })
+        
+      function searchFunction(){
+         const query = document.getElementById('search').value.trim();
+        
+         
+          if (query) {
+     
+      alert("You searched for: " + query);
+
+     
+    } else {
+      alert("Please enter something to search.");
+    }
+  
+
+      }      
+ 
+ 
+       //count increase
+       const cartcount=JSON.parse(localStorage.getItem("countdata"))
+       console.log(cartcount)
+        document.getElementById("cart-count").textContent=cartcount.length
+
+
+        const slides = document.querySelectorAll(".con");
+        let currentcon = 0;
+
+        function showSlide(index) {
+          slides.forEach((con, i) => {
+            con.style.display = "none"; // Hide all slides
+            con.classList.remove("active");
+          });
+
+          slides[index].style.display = "block"; // Show the selected slide
+          slides[index].classList.add("active");
+        }
+
+        // Initially show the first slide
+        showSlide(currentcon);
+
+        setInterval(() => {
+          currentcon = (currentcon + 1) % slides.length;
+          showSlide(currentcon);
+        }, 3000); // changes every 3 seconds
+        let data = [
+          {
+            id: 1,
+            name: "Cold Coffee",
+            category:
+              "Everybody’s favourite indulgence. Crafted expertly with prem... ",
+            size: "TALL(345 ml)-354 kcal",
+            calories: "354 kcal",
+            price: 336.0,
+            image: "../image/coffe.webp",
+          },
+          {
+            id: 2,
+            name: "Java Chip Frappuccino",
+            category:
+              "Mocha sauce and Frappuccino* chips blended with  Frappu..",
+            size: "TALL(345 ml)-392 kcal",
+            calories: "392 kcal",
+            price: 409.5,
+            image: "../image/chip.webp",
+          },
+
+          {
+            id: 4,
+            name: "Cappuccino",
+            category:
+              "Dark, Rich in flavour espresso lies in wait under a smoothed...",
+            size: "SHORT(237 ml)-104 kcal",
+            calories: "104 kcal",
+            price: 299.25,
+            image: "../image/cappuchino.webp",
+          },
+        ];
+
+
+
+
+
+
+
+
+      
+ let cartview=document.getElementById("cart")
+ cartview.addEventListener("click",()=>{
+  location.href="./viewcart.html"
+ })
+
+
+        let container = document.getElementById("recommand");
+
+        data.forEach((val) => {
+          let chiled = document.createElement("div");
+          let image = document.createElement("img");
+          let name = document.createElement("b");
+          let size = document.createElement("span");
+          let discription = document.createElement("p");
+          let price = document.createElement("h4");
+          let btn = document.createElement("button");
+
+          let body = document.getElementsByTagName("body");
+
+          image.setAttribute("src", val.image);
+          name.innerHTML = val.name;
+          size.innerText = val.size;
+          discription.innerHTML = val.category;
+          price.innerHTML = "₹" + val.price;
+          btn.innerHTML = "Add to cart";
+          btn.id = "addtocart";
+
+          chiled.className = "card";
+          discription.className = "dis";
+          size.className = "cal";
+          price.className = "price";
+          image.className = "cutimage";
+          btn.className="cardbtn"
+
+
+
+
+          btn.addEventListener("click",()=>{
+            alert("Nice choice! It’s in your cart now 🎉")
+            let homeitems=JSON.parse(localStorage.getItem("homeItems"))||[]
+            homeitems.push(val)
+            localStorage.setItem("homeItems",JSON.stringify(homeitems))
+          })
+          console.log(container);
+
+          console.log(chiled);
+          console.log(name);
+          console.log(image);
+          console.log(discription);
+          console.log(size);
+          console.log(price);
+          console.log(btn);
+          console.log(body);
+
+          chiled.append(image, name, size, discription, price, btn);
+          container.append(chiled);
+        });
+      </script>
+    </div>
+  </body>
+</html>

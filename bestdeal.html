@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style1.css">
+    <!-- <style>
+              * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }
+      html{
+        scroll-behavior: smooth;
+      }
+      .navbar-img{
+        width: 50px;
+        height: 50px;
+            border-radius: 40px;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+      
+        padding: 10px 30px;
+        background-color:white;;
+          width: 100%;
+            height: 80px;
+            align-items: center;
+            gap: 50px;
+            border: 2px solid  black;
+             position: sticky;
+            top: 0;
+            z-index: 10;
+        
+      }
+      .nav-left {
+        display: flex;
+        gap:20px;
+        align-items: center;
+      }
+
+      #nav-right {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+        .nav-left>a{
+             text-decoration:none;
+            color: black;
+            font-family:Arial, sans-serif ;
+        }
+
+      #search {
+       
+          width: 250px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: white;
+            padding: 5px 5px;
+            color: black;
+            border: 2px solid white;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+      } .se{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+           left: 91%;
+           top: 25px;
+      }
+        #count{
+            position: relative;
+        }
+       #cart{
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+       }
+        #cart-count{
+             position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px; 
+    border-radius: 50%;
+        }
+        
+        .star{
+            background-color: #198754;
+            width: 100%;
+            height: 70px;
+            color: white;
+             display: flex;
+             font-family: "Alegreya SC", serif;
+             align-items: center;
+           padding:20px;
+            position: relative;
+            
+        }.star b{
+           position: absolute;
+           top: 20px;
+           left: 100px;
+           font-size: 25px;
+           cursor: pointer;
+        }
+        .know{
+            position: absolute;
+           left: 90%;
+           top: 20px;
+           color: white;
+           text-decoration: none;
+        }
+       * { box-sizing: border-box; margin: 0; padding: 0;
+       }
+    body {
+      font-family: Arial, sans-serif;
+         background-color: #f5f5f5;   
+         margin: 0;
+  padding: 0;}
+      .main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 2rem;
+    padding: 20px;
+   
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+    height: 220px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding: 20px;
+    position: relative;
+  
+    
+  
+}
+      
+        .product-image {
+          display: inline;
+           object-fit: cover;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            position: absolute;
+            top: 40px;
+          
+           
+          
+           
+        
+        }
+        b {
+            font-size: 15px;
+            text-align: center;
+            color: black;
+            font-family: SoDoSans_Semibold,Helvetica,sans-serif !important;
+            position: absolute;
+            top: 50px;
+            left: 140px;
+           
+            
+        }
+        p {
+            font-size: 12px;
+            /* text-align: center; */
+            position: absolute;
+            top: 65px;
+            left: 140px;
+            font-family: Pike_Regular,Helvetica,sans-serif;
+            color: darkgray;
+          }
+          .cate{
+              
+              justify-content: center;
+              text-align: center;
+              position: absolute;
+           top: 100px;
+           left: 140px;
+           font-family: SoDoSans_Light,Helvetica,sans-serif !important;
+           color: var(--bs-card-color);
+           font-size: 12px;
+           text-align: var(--bs-body-text-align);
+                            -webkit-text-size-adjust: 100%;
+}
+          
+
+.price{
+  position: absolute;
+  top: 165px;
+  left: 140px;
+  font-size: 20px;
+}
+
+          
+        button{
+           
+            width: 100px;
+            height: 40px;
+            border-radius: 30px;
+            color: white;
+            cursor: pointer;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+            position: absolute;
+            top: 155px;
+            left: 250px;
+           
+        
+        }
+       
+
+ </style> -->
+ <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+ <div class="nav">
+   
+      <div class="nav-left">
+       
+       <a href="">
+          <img class="navbar-img"
+          
+            src="../image/starbucks.png"
+            alt=""
+          /> </a>
+        <a class="n" href="./home.html">Home</a><a class="n" href="#main">Menu</a
+        ><a class="n" href="./home.html">Coffe</a><a class="n" href="./home.html">About us</a
+        ><a class="n" href="./home.html">Contact us</a>
+        
+      </div>
+      <div id="nav-right">
+        <input
+          type="text"
+          placeholder="looking for something specific?"
+          id="search"
+        />
+        <a href="">
+          <img class="se" src="../image/search.png" alt="" />
+        </a>
+
+       
+        <div id="count">
+        <img id="cart" src="../image/cart.png" alt="" />
+        <span id="cart-count">0</span>
+        </div>
+      </div>
+    </div>
+ 
+ 
+    <div class="star">
+     <b>Starbucks</b>
+     <a class="" href="">
+         <p class="know">Know More</p>
+     </a>
+     
+    </div>
+   
+
+  <script>
+  //searching to find element
+          const searchInput = document.getElementById('search');
+  const noResultsMessage = document.getElementById('noResults');
+
+  searchInput.addEventListener('input', function () {
+    const searchValue = this.value.toLowerCase();
+    const productCards = document.querySelectorAll('.card');
+    let anyVisible = false;
+
+    productCards.forEach(card => {
+      const name = card.querySelector('b').innerText.toLowerCase();
+
+      if (name.includes(searchValue)) {
+        card.style.display = 'flex'; // or 'block'
+        anyVisible = true;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  })
+     
+
+
+
+
+const cartcount=JSON.parse(localStorage.getItem("countdata"))
+       console.log(cartcount)
+       document.getElementById("cart-count").textContent=cartcount.length
+   
+
+
+
+     let data=[
+     {
+    id: 1,
+    name: "Cold Coffee",
+    discription: "Everybody’s favourite indulgence. Crafted expertly with prem... ",
+    size: "TALL(345 ml)-354 kcal",
+    calories: "354 kcal",
+    price: 336.00,
+    image: "/image/coffe.webp"
+  },
+  {
+    id: 2,
+    name: "Java Chip Frappuccino",
+    discription: "Mocha sauce and Frappuccino* chips blended with  Frappu..",
+    size: "TALL(345 ml)-392 kcal",
+    calories: "392 kcal",
+    price: 409.50,
+    image: "/image/chip.webp"
+  },
+  {
+    id: 3,
+    name: "Caffe Americano",
+    discription: "Rich in flavour, full-bodied espresso with hot water in true...",
+    size: "SHORT(237 ml)-0 kcal",
+    calories: "0 kcal",
+    price: 283.50,
+    image: "/image/caffe.webp"
+  },
+  {
+    id: 4,
+    name: "Cappuccino",
+    discription: "Dark, Rich in flavour espresso lies in wait under a smoothed...",
+    size: "SHORT(237 ml)-104 kcal",
+    calories: "104 kcal",
+    price: 299.25,
+    image: "/image/cappuchino.webp"
+  },
+  {
+    id: 5,
+    name: "Chicken Salad Sandwich",
+    discription: "Tender chicken mixed with julienned colored bell peppers, gr...",
+    size: "Per Serve (185 g)-574 kcal",
+    calories: "574 kcal",
+    price: 294.00,
+    image: "/image/chicken salad.png"
+  },
+  {
+    id: 6,
+    name: "Double Chocolate Chip Frappuccino",
+    discription: "ich mocha-flavored sauce meets up with chocolaty chips, mil...",
+    size: "TALL(345 ml)-415 kcal",
+    calories: "415 kcal",
+    price: 430.50,
+    image: "/image/coho.webp"
+  },
+  {
+    id: 7,
+    name: "Egg White and Chicken  Multigrain",
+    discription: "Fluffy egg white omlette and chicken ham sandwiched in multi.",
+    size: "Per Serve (200 g)-541 kcal",
+    calories: "541 kcal",
+    price: 388.50,
+    image: "/image/eg.webp"
+  },
+  {
+    id: 8,
+    name: "Paneer Tikka Sandwich",
+    discription: "Marinated tandoori paneer filling, sliced cheese, and whole ... ",
+    size: "Per Serve (185 g)-537 kcal",
+    calories: "537 kcal",
+    price: 294.00,
+    image: "/image/bananacake.jpg"
+  },
+  {
+    id: 9,
+    name: "New York Cheesecake",
+    discription: "The Classic New York Cheese cake with a rich, creamy satiny...",
+    size: "Per Serve (150 g)-485 kcal",
+    calories: "485 kcal",
+    price: 435.75,
+    image: "/image/chesecake.jpg"
+  },
+  {
+    id: 10,
+    name: "Banana Chocolate Loaf Cake",
+    discription: "English tea cake with rich taste of banana and chocolate",
+    size: "Per Serve (125 g)-385 kcal",
+    calories: "385 kcal",
+    price: 346.50,
+    image: "/image/bananacake.jpg"
+  },
+  {
+    id: 11,
+    name: "Blueberry Muffin",
+    discription: "Buttery vanilla cake with berries dusted with granulated sug..",
+    size: "Per Serve (120 g)-375.5 kcal",
+    calories: "375.5 kcal",
+    price: 330.75,
+    image:"/image/blueberry.webp"
+  }
+];
+let container=document.createElement("div")
+ container.className="main"
+    container.id="main"
+
+
+ let cartview=document.getElementById("cart")
+ cartview.addEventListener("click",()=>{
+  location.href="./viewcart.html"
+ })
+
+ data.forEach((val) => {
+
+
+    
+// let chiled=document.createElement("div")
+// let img=document.createElement("img")
+// let name=document.createElement("b")
+// let category=document.createElement("p")
+// let calories=document.createElement("span")
+// let size=document.createElement("span")
+// let price=document.createElement("h4")
+// let btn=document.createElement("button")
+
+
+let chiled=document.createElement("div")
+let img=document.createElement("img")
+let name=document.createElement("b")
+let size=document.createElement("span")
+// let discription=document.createElement("span")
+let price=document.createElement("h4")
+let calories = document.createElement("span") // Add this line
+let btn=document.createElement("button")
+
+    
+
+let body=document.getElementsByTagName("body")
+
+
+btn.addEventListener("click",()=>{
+  alert("Awesome choice! We've added it to your cart.")
+  let bestdeals=JSON.parse(localStorage.getItem("bestdeals"))||[]
+  bestdeals.push(val)
+  const cart=localStorage.setItem("bestdeals",JSON.stringify(bestdeals))
+  console.log("bestdeals",bestdeals)
+})
+img.setAttribute("src",val.image)
+name.innerHTML=val.name
+size.innerText=val.size
+// discription.innerHTML=val.description
+price.innerHTML= '₹'+  val.price
+calories.innerText = val.discription
+btn.innerHTML="Add to cart"
+// img.setAttribute("src",val.image)
+// name.innerHTML=val.name
+// category.innerHTML=val.category
+// calories.innerText=val.discription
+// size.innerHTML=val.size
+// price.innerHTML= '₹'+  val.price
+// btn.innerHTML="Add to cart"
+
+
+// chiled.className="card"
+// category.className="dis"
+// calories.className="cal"
+// price.className="price"
+// img.className="product-img"
+// btn.className="card-btn"
+
+
+chiled.className="card"
+calories.className="dis"
+size.className="cal"
+price.className="price"
+img.className="product-img"
+btn.className="card-btn"
+
+
+
+
+
+
+img.style.width="100px"
+img.style.height="100px"
+btn.style.background="green"
+btn.style.padding="10px"
+
+
+
+  console.log(container)
+  console.log(chiled)
+  console.log(name)
+  console.log(img)
+
+  console.log(calories)
+  console.log(size)
+  console.log(price)
+  console.log(btn)
+  console.log(body)
+ 
+
+
+
+
+chiled.append(img,name,size,calories,price,btn)
+container.append(chiled)
+
+
+ })
+
+document.body.append(container)
+
+
+  </script>  
+</body>
+</html

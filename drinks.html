@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+   
+    <!-- <style>   * {
+
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }html{
+        scroll-behavior: smooth;
+      }
+      .navbar-img{
+        width: 50px;
+        height: 50px;
+            top: 0px;
+            border-radius: 40px;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+      
+        padding: 10px 30px;
+        background-color:white;;
+          width: 100%;
+            height: 80px;
+            align-items: center;
+            gap: 50px;
+            border: 2px solid  black;
+             position: sticky;
+            top: 0;
+            z-index: 10;
+        
+      }
+      .nav-left {
+        display: flex;
+        gap:20px;
+        align-items: center;
+      }
+
+      #nav-right {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+        
+        .nav-left>a{
+             text-decoration:none;
+            color: black;
+            font-family:Arial, sans-serif ;
+          
+        }
+
+      #search {
+       
+          width: 250px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: white;
+            padding: 5px 5px;
+            color: black;
+            border: 2px solid white;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+      } .se{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+           left: 91%;
+           top: 25px;
+      }
+        #count{
+            position: relative;
+        }
+       #cart{
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+       }
+        #cart-count{
+             position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px; 
+    border-radius: 50%;
+        }
+        .star{
+            background-color: #198754;
+            width: 100%;
+            height: 70px;
+            color: white;
+             display: flex;
+             font-family: "Alegreya SC", serif;
+             align-items: center;
+           padding:20px;
+            position: relative;
+            
+        }.star b{
+           position: absolute;
+           top: 20px;
+           left: 100px;
+           font-size: 25px;
+           cursor: pointer;
+        }
+        .know{
+            position: absolute;
+           left: 90%;
+           top: 20px;
+           color: white;
+           text-decoration: none;
+        }
+       * { box-sizing: border-box; margin: 0; padding: 0;
+       }
+    body {
+      font-family: Arial, sans-serif;
+         background-color: #f5f5f5;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         
+         margin: 0;
+  padding: 0;}
+   .main {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ width: 100%;
+ gap: 2rem;
+ padding: 20px;
+
+}
+
+.card {
+ background-color: white;
+ border-radius: 10px;
+ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+ height: 220px;
+ width: 400px;
+ display: flex;
+ flex-direction: column;
+ margin-left: 20px;
+ padding: 20px;
+ position: relative;
+
+ 
+
+}
+   
+     .product-img{
+       display: inline;
+        object-fit: cover;
+         width: 100px;
+         height: 100px;
+         border-radius: 50%;
+         object-fit: cover;
+         margin-bottom: 10px;
+         position: absolute;
+         top: 40px;
+       
+        
+       
+        
+     
+     }
+     b {
+         font-size: 15px;
+         text-align: center;
+         color: black;
+         font-family: SoDoSans_Semibold,Helvetica,sans-serif !important;
+         position: absolute;
+         top: 50px;
+         left: 140px;
+        
+         
+     }
+     .cal{
+         font-size: 12px;
+         /* text-align: center; */
+         position: absolute;
+         top: 75px;
+         left: 140px;
+         font-family: Pike_Regular,Helvetica,sans-serif;
+         color: darkgray;
+       }
+       .dis{
+           
+           justify-content: center;
+           text-align: center;
+           position: absolute;
+        top: 100px;
+        left: 140px;
+        font-family: SoDoSans_Light,Helvetica,sans-serif !important;
+        color: var(--bs-card-color);
+        font-size: 12px;
+        text-align: var(--bs-body-text-align);
+                         -webkit-text-size-adjust: 100%;
+}
+       
+
+.price{
+position: absolute;
+top: 165px;
+left: 140px;
+font-size: 20px;
+}
+
+       
+     button{
+        
+         width: 100px;
+         height: 40px;
+         border-radius: 30px;
+         color: white;
+         cursor: pointer;
+         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); 
+         position: absolute;
+        top: 155px;
+         left: 250px;
+        background-color: green;
+     
+     }
+    </style> -->
+ <link rel="stylesheet" href="style1.css">
+  </head>
+<body>
+    <div class="nav">
+   
+      <div class="nav-left">
+       
+       <a href="">
+          <img class="navbar-img"
+          
+            src="../image/starbucks.png"
+            alt=""
+          /> </a>
+         <a class="n" href="./home.html">Home</a>
+        <a class="n" href="#main">Menu</a >
+          <a class="n" href="./home.html">Coffe </a>
+          <a class="n" href="./home.html">About us</a>
+        <a class="n" href="./home.html">Contact us</a>
+        
+      </div>
+      <div id="nav-right">
+        <input
+          type="text"
+          placeholder="looking for something specific?"
+          id="search"
+        />
+        <a href="">
+          <img class="se" src="../image/search.png" alt="" />
+        </a>
+
+       
+        <div id="count">
+        <img id="cart" src="../image/cart.png" alt="" />
+        <span id="cart-count">0</span>
+        </div>
+      </div>
+    </div>
+ 
+ 
+    <div class="star">
+     <b>Starbucks</b>
+     <a class="" href="">
+         <p class="know">Know More</p>
+     </a>
+     
+    </div>
+ 
+    <script>
+         //searching to find element
+          const searchInput = document.getElementById('search');
+  const noResultsMessage = document.getElementById('noResults');
+
+  searchInput.addEventListener('input', function () {
+    const searchValue = this.value.toLowerCase();
+    const productCards = document.querySelectorAll('.card');
+    let anyVisible = false;
+
+    productCards.forEach(card => {
+      const name = card.querySelector('b').innerText.toLowerCase();
+
+      if (name.includes(searchValue)) {
+        card.style.display = 'flex'; // or 'block'
+        anyVisible = true;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  })
+     
+       
+       
+       
+       
+       
+       
+       
+       
+       const cartcount=JSON.parse(localStorage.getItem("countdata"))
+       console.log(cartcount)
+       document.getElementById("cart-count").textContent=cartcount.length
+        let drinks= [
+  {
+    id: 1,
+    name: "Classic Iced Coffee",
+    size: "SHORT (237 ml)-128KL",
+    calories: 128,
+    price: 236.25,
+    description: "Savour our premium coffee made with top 3% Arabica beans in a refreshing iced format.",
+    image: "https://plus.unsplash.com/premium_photo-1675435644687-562e8042b9db?q=80&w=1949&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    id: 2,
+    name: "Classic Hot Coffee",
+    size: "180 ml-104KL",
+    calories: 105,
+    price: 157.50,
+    description: "Savour our premium coffee made with top 3% Arabica beans in a classic hot brew.",
+    image: "https://www.bbassets.com/media/uploads/p/l/40339365_2-starbucks-coffee-classic-hot-coffee-picco.jpg"
+  },
+  {
+    id: 3,
+    name: "Blonde Almond Latte",
+    size: "SHORT (237 ml)-64KL",
+    calories: 64,
+    price: 404.25,
+    description: "Ditch the dairy with our Plant-Based Almond special, paired with smooth Blonde Espresso.",
+image: "https://b.zmtcdn.com/data/dish_photos/c67/01ff4226b0aa37214981a61f4f330c67.jpeg"
+  },
+  {
+    id: 4,
+    name: "Blonde Jaggery Oat Latte",
+    size: "SHORT (237 ml)-107KL",
+    calories: 107,
+    price: 404.25,
+    description: "Rustic Jaggery sweetness meets subtle and nuanced Blonde Roast in this oat milk latte.",
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4AaIuWrienh5dh584uy13wyVxbbo4w9jYwA&s"
+  },
+  {
+    id: 5,
+    name: "Honey Almond Flat White",
+    size: "SHORT (237 ml)-89KL",
+    calories: 89,
+    price: 409.50,
+    description: "Your daily cup of coffee gets even better in our Plant-Based almond milk with honey infusion.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS2-8G159fvP1w8Ix1bxFCpCywbLhTrKcw1g&s"
+  },
+  {
+    id: 6,
+    name: "Honey Oat Flat White",
+    size: "SHORT (237 ml)-114KL",
+    calories: 114,
+    price: 409.50,
+    description: "A velvety smooth coffee experience made with oat milk and the gentle sweetness of honey.",
+image: "https://thehealthfulideas.com/wp-content/uploads/2022/06/Iced-Honey-Almondmilk-Flat-White-17.jpg"
+  },
+  {
+    id: 7,
+    name: "Creme Brulee Latte",
+    size: "SHORT (237 ml)-428KL",
+    calories: 428,
+    price: 414.75,
+    description: "A blend of espresso and velvety steamed milk infused with decadent crème brûlée flavor.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmpDCy7w6I3QfvtMiad4MgZKSL85mCmvsSjw&s"
+  },
+  {
+    id: 8,
+    name: "Iced Creme Brulee Latte",
+    size: "TALL (345 ml)-465KL",
+    calories: 465,
+    price: 456.75,
+    description: "A refreshing iced latte with crème brûlée flavor, creamy milk, and robust espresso.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXYBET-9WWvIKP8a_DzatiukCElrclfrSbRw&s"
+  },
+  {
+    id: 9,
+    name: "Caffe Americano",
+    size: "SHORT (237 ml)-0KL",
+    calories: 0,
+    price: 283.50,
+    description: "Rich in flavour, full-bodied espresso with hot water in true European style.",
+    image: "https://www.taylorlane.com/cdn/shop/articles/Delicious-Homemade-Americano_1000x.jpg?v=1605897263"
+  },
+  {
+    id: 10,
+    name: "Caffe Latte",
+    size: "SHORT (237 ml)-104KL",
+    calories: 104,
+    price: 309.75,
+    description: "Our dark, rich in flavour espresso balanced with steamed milk and a light layer of foam.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT59Xc7Bc4TchzWWTSoWeKWd5GUpdsYBTEV7g&s"
+  },
+  {
+    id: 11,
+    name: "Caffè Mocha",
+    size: "SHORT (237 ml)-230KL",
+    calories: 232,
+    price: 351.75,
+    description: "Rich in flavour espresso blended with bittersweet mocha sauce and steamed milk, topped with whipped cream.",
+    image: "https://milkandpop.com/wp-content/uploads/2020/11/mocha-latte-13.jpg"
+  },
+  {
+    id: 12,
+    name: "Caramel Macchiato",
+    size: "SHORT (237 ml)-162KL",
+    calories: 162,
+    price: 372.75,
+    description: "Freshly steamed milk with vanilla syrup marked with espresso and topped with caramel drizzle.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0CL2MIaFetR9NRcDVUW4KHQqcaN6ZPo3D4w&s"
+  },
+  {
+    id: 13,
+    name: "Chocolate Cappuccino",
+    size: "SHORT (237 ml)-150KL",
+    calories: 150,
+    price: 367.50,
+    description: "Rich espresso and bittersweet cocoa under a thick layer of creamy milk foam.",
+    image: "https://www.dvo.com/link/0128_044108703.jpg"
+  },
+  {
+    id: 14,
+    name: "Cappuccino",
+    size: "SHORT (237 ml)-104KL",
+    calories: 104,
+    price: 299.25,
+    description: "Espresso under a rich layer of foam for a bold yet balanced flavor.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5-Bw696xHgriG1Sz9qVWsffiJtZH2PDWxpw&s"
+  },
+  {
+    id: 15,
+    name: "Flat White",
+    size: "SHORT (237 ml)-104KL",
+    calories: 104,
+    price: 330.75,
+    description: "Expertly steamed milk poured over shots of ristretto for a creamy, rich coffee.",
+    image: "https://example.com/images/flat-white.jpg"
+  },
+  {
+    id: 16,
+    name: "Iced Caramel Macchiato",
+    size: "TALL (354 ml)-0KL",
+    calories: null,
+    price: 409.50,
+    description: "Espresso with vanilla syrup, milk, and caramel drizzle served over ice.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzknccEe3GQOVuwGqNCxem3AkmXMhgVUWtAQ&s"
+  },
+  {
+    id: 17,
+    name: "Iced Caffè Americano",
+    size: "TALL (354 ml)-0KL",
+    calories: 0,
+    price: 320.25,
+    description: "Espresso shots topped with cold water for a light layer of crema.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfEkRPQAcRuCVDDmfpfW-XY14YSnK2j2Q4jA&s"
+  },
+  {
+    id: 18,
+    name: "Iced Caffè Latte",
+    size: "TALL (345 ml)-122KL",
+    calories: 122,
+    price: 346.50,
+    description: "Espresso with milk and ice for a smooth, refreshing latte.",
+    image: "https://chezshibata365.com/cdn/shop/products/Icedcappuccino.jpg?v=1714135652&width=900"
+  },
+  {
+    id: 19,
+    name: "Iced Caffè Mocha",
+    size: "TALL (345 ml)-291KL",
+    calories: 291,
+    price: 388.50,
+    description: "Espresso with mocha sauce, milk, and ice, topped with whipped cream.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcoQTueGUDXOdy5ET04Eg03HH6NI0m1LcYeg&s"
+  },
+  {
+    id: 20,
+    name: "Iced Cappuccino",
+    size: "TALL (345 ml)-214KL",
+    calories: 214,
+    price: 336.00,
+    description: "Chilled espresso and steamed milk foam blended into an Italian-style iced cappuccino.",
+    image: "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20181217_IcedCappuccino_ColdFoam.jpg?impolicy=1by1_wide_topcrop_630"
+  },
+  {
+    id: 21,
+    name: "Iced Chocolate Cappuccino",
+    size: "TALL (345 ml)-161KL",
+    calories: 161,
+    price: 404.25,
+    description: "Mocha-flavored iced cappuccino with espresso, milk foam, and cocoa.",
+    image: "https://media.istockphoto.com/id/1199993354/photo/ice-coffee-in-a-tall-glass-with-splash.jpg?s=612x612&w=0&k=20&c=aYrOxrpOITJCPac4J9HehvI-4YYg_LLPDrl87v_re-E="
+  },
+  {
+    id: 22,
+    name: "Iced Velvet Vanilla Latte",
+    size: "TALL (345 ml-383KL)",
+    calories: 383,
+    price: 446.25,
+    description: "Creamy iced vanilla latte made with dark espresso and smooth milk.",
+    image: "https://5.imimg.com/data5/SELLER/Default/2023/2/DN/NX/DK/185513203/velvet-vanilla-latte.jpg"
+  },
+  {
+    id: 23,
+    name: "Iced White Mocha",
+    size: "TALL (354 ml)-339KL",
+    calories: 339,
+    price: 393.75,
+    description: "Espresso with white mocha sauce and milk over ice.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0BmVRN_T0JctkmUHWgrHTOPj_iDURCTjnTA&s"
+  },
+  {
+    id: 24,
+    name: "Velvet Vanilla Latte",
+    size: "SHORT (237 ml)-280KL",
+    calories: 280,
+    price: 409.50,
+    description: "Dark espresso paired with vanilla syrup and steamed milk for a creamy finish.",
+    image: "https://img.freepik.com/free-photo/top-view-organic-latte-macchiato-with-milk_23-2148420327.jpg?semt=ais_hybrid&w=740"
+  },
+  {
+    id: 25,
+    name: "White Chocolate Mocha",
+    size: "SHORT (237 ml)-252KL",
+    calories: 252,
+    price: 357.00,
+    description: "Espresso meets white chocolate sauce and steamed milk, topped with whipped cream.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ubiHy5XopLDiJaMmpKlVP_Gb9UibmPvWxw&s"
+  },
+  {
+    id: 26,
+    name: "Vanilla Caffe Latte",
+    size: "SHORT (237 ml)-125KL",
+    calories: 125,
+    price: 367.50,
+    description: "Espresso and vanilla-flavored syrup combined with steamed milk and foam.",
+    image: "https://www.allrecipes.com/thmb/SUs7po94w7k2OwqYDjC3H_ZW3JQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/96629-cafe-latte-ddmfs-hero-4x3-0288359d9c37485fa69afe5369dbcf2e.jpg"
+  },
+  {
+    id: 27,
+    name: "Iced Vanilla Latte",
+    size: "TALL (345 ml)-194KL",
+    calories: 194,
+    price: 404.25,
+    description: "Espresso over ice with milk and vanilla-flavored syrup.",
+    image: "https://thehealthfulideas.com/wp-content/uploads/2023/09/Iced-Vanilla-Latte-SQUARE2.jpg"
+  },
+  {
+    id: 28,
+    name: "Iced Hazelnut Latte",
+    size: "TALL (345 ml)-199KL",
+    calories: 199,
+    price: 404.25,
+    description: "Espresso over ice blended with milk and hazelnut syrup.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGij2XVkIo59UMENSGgVH6eRSTWf6Ni-MFXw&s"
+  },
+  {
+    id: 29,
+    name: "Hazelnut Caffe Latte",
+    size: "SHORT (237 ml)-130KL",
+    calories: 130,
+    price: 367.50,
+    description: "Espresso and hazelnut syrup combined with steamed milk and foam.",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8q1WF5xPVa-ve4pm0VLm9zawGPoKpGppCsg&s"
+  }
+];
+let container=document.createElement("div")
+ container.className="main"
+ container.id="main"
+
+
+ 
+ let cartview=document.getElementById("cart")
+ cartview.addEventListener("click",()=>{
+  location.href="./viewcart.html"
+ })
+ 
+ drinks.forEach((val) => {
+
+
+    
+let chiled=document.createElement("div")
+let img=document.createElement("img")
+let name=document.createElement("b")
+let size=document.createElement("span")
+let discription=document.createElement("p")
+let price=document.createElement("h4")
+let btn=document.createElement("button")
+    
+
+let body=document.getElementsByTagName("body")
+
+
+img.setAttribute("src",val.image)
+name.innerHTML=val.name
+size.innerText=val.size
+discription.innerHTML=val.description
+price.innerHTML= '₹'+  val.price
+btn.innerHTML="Add to cart"
+
+
+chiled.className="card"
+discription.className="dis"
+size.className="cal"
+price.className="price"
+img.className="product-img"
+btn.className="card-btn"
+
+
+
+btn.addEventListener("click",()=>{
+  alert("Awesome choice! We've added it to your cart.")
+  let drinkitems=JSON.parse(localStorage.getItem("drinkitems"))||[]
+  drinkitems.push(val)
+  const cart=localStorage.setItem("drinkitems",JSON.stringify(drinkitems))
+  console.log("bestdeals",drinkitems)
+})
+
+
+
+
+
+
+
+  console.log(container)
+  console.log(chiled)
+  console.log(name)
+  console.log(img)
+  console.log(discription)
+  console.log(size)
+  console.log(price)
+  console.log(btn)
+  console.log(body)
+ 
+
+
+
+
+
+chiled.append(img,name,size,discription,price,btn)
+container.append(chiled)
+
+
+ })
+
+document.body.append(container)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+    <!-- <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+      #payment-form {
+        width: 100%;
+       height: 800px;
+        padding: 10px 10px;
+        display: flex;
+       gap: 20px;
+       align-items: center;
+       justify-content: center;
+      }
+      #payment-form-inside {
+   
+        padding: 50px 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        
+      }
+      input {
+        width: 400px;
+      height: 45px;
+      padding: 10px 15px;
+      border: 3px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+      background-color: #fff;
+      }
+      
+    input:focus {
+      border-color: #00704A;
+      box-shadow: 0 0 8px rgba(0, 112, 74, 0.5);
+      outline: none;
+    }
+       input:valid {
+  border-color: #a8e6cf; /* Light green */
+  box-shadow: 0 0 6px rgba(168, 230, 207, 0.6);
+}
+
+input:invalid {
+  border-color: #ffcccb; /* Light red */
+  box-shadow: 0 0 6px rgba(255, 204, 203, 0.6);
+}
+      label {
+        font-size: 20px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .btn {
+        width: 80px;
+        height: 40px;
+      }
+      #paybtn {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+
+        align-items: center;
+      }
+      b {
+        font-size: 26px;
+      }
+      #sub-heading {
+        font-size: 25px;
+      }
+      label {
+        font-size: 15px;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        align-items: center;
+      }
+      #radio {
+        width: 15px;
+      }
+      .payment-details {
+        width: 500px;
+        display: none;
+        margin-left: 0%;
+        padding: 10px 10px;
+        border-radius: 5px;
+      }#paynow{
+      width: 400px;
+      background-color:#2ecc71; /* Bootstrap Blue */
+      color: #fff;
+      border: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
+      box-shadow: 0 4px 6px rgba(46, 204, 113, 0.3);
+
+      }#paynow:hover {
+      background-color: #27ae60;
+       box-shadow: 0 6px 12px rgba(39, 174, 96, 0.4);
+    }
+
+    #paynow:active {
+      background-color: #219150;
+      transform: scale(0.98);
+       box-shadow: 0 6px 12px rgba(39, 174, 96, 0.4);
+    }
+
+    #paynow:focus {
+      outline: none;
+       box-shadow: 0 0 0 4px rgba(46, 204, 113, 0.3);
+    }
+      h1{
+        display: none;
+      }#payment-container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      #paymenticon-container{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+       padding: 2px;
+      }
+      .paymenticon{
+        width: 60px;
+        height: 60px;
+      }.paymenticon-master,.paymenticon-paypal{
+         width: 80px;
+        height: 80px;
+      }#credit{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+    </style> -->
+  </head>
+  <body>
+    <form id="payment-form" onsubmit="handleClick(event)">
+      <h1>Payment Method</h1>
+      <div id="payment-form-inside">
+        <label id="sub-heading">Checkout</label><br /><br />
+        <label>Email:</label>
+        <input type="email'" placeholder="Enter your Email" required />
+        <label id="sub-heading">Shipping</label>
+        <label>Fullname:</label>
+        <input type="text" placeholder="First and lastname" />
+        <label>Address Line 1:</label>
+        <input type="text'" placeholder="Street Address" required />
+        <label>Address Line 2</label>
+        <input type="text" placeholder="Street Address" />
+        <label>Pin Code:</label>
+        <input type="text'" placeholder="Pin Code" required />
+      </div>
+
+      <div id="payment-container">
+        <div id="paymenticon-container">
+          <img class="paymenticon-master" src="../image/master.png" alt="" />
+          <img class="paymenticon-paypal" src="../image/paypal.png" alt="" />
+          <img class="paymenticon" src="../image/card.png" alt="" />
+          <img class="paymenticon" src="../image/visa.png" alt="" />
+          <img class="paymenticon" src="../image/credit.png" alt="" />
+        </div>
+
+        <label id="sub-heading">Payment</label>
+
+        <div id="paybtn">
+          <button type="button" onclick="showDetails('credit')" class="btn">
+            CARD <img src="/image/creditcard.png" alt="" />
+          </button>
+          <button type="button" onclick="showDetails('upi')" class="btn">
+            UPI <img src="/image/upi.png" alt="" />
+          </button>
+          <button type="button" onclick="showDetails('cod')" class="btn">
+            COD <img src="/image/COD.png" alt="" />
+          </button>
+        </div>
+
+        <div id="credit" class="payment-">
+          <h3>Credit Card Details</h3>
+          <label
+            >Card Number:<br />
+            <input
+              type="text"
+              placeholder="1234 5678 9012 3456"
+             /></label
+          ><br />
+          <label
+            >Expiry Date:<br />
+            <input type="text" placeholder="MM/YY"   /></label
+          ><br />
+          <label
+            >CVV: <br /><input
+              type="password"
+              placeholder="123"
+              /></label
+          ><br /><br>
+          <button id="paynow" type="submit">Paynow</button>
+        </div>
+        <div id="upi" class="payment-details">
+          <h3>UPI Details</h3>
+          <label
+            >UPI ID:<br />
+            <input type="text" placeholder="example@upi" /></label
+          ><br /><br>
+          <button id="paynow" type="submit">Paynow</button>
+        </div>
+        <div id="cod"  class="payment-details">
+          <h3>Cash on delivery</h3>
+          <label
+            >Number:<br /><input
+              type="number"
+              placeholder="xxxx@number"
+                name="number" /></label
+          ><br /><br>
+          <button id="paynow" type="submit">Paynow</button>
+        </div>
+      </div>
+    </form>
+
+    <script>
+      function showDetails(method) {
+        // hieds the details
+        let credit = document.getElementById("credit");
+        credit.style.display = "none";
+        let upi = document.getElementById("upi");
+        upi.style.display = "none";
+        let cod = document.getElementById("cod");
+        cod.style.display = "none";
+        //  shows when we click
+
+        let display = document.getElementById(method);
+        display.style.display = "block";
+      }
+
+      function handleClick(e) {
+        event.preventDefault();
+        location.href = "./ordered.html";
+      }
+    </script>
+  </body>
+</html>

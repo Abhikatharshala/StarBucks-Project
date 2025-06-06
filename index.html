@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup</title>
+    <link rel="stylesheet" href="style.css">
+   
+       <style>
+   
+  </style>
+    </style>
+  </head>
+  <body>
+    <form action="" id="signUpForm">
+      <fieldset id="signup_starbucks">
+        <legend>SIGN UP</legend>
+        <div class="abhi">
+          <div class="branding">
+            <img src="/image/starbucks.png" alt="" />
+            <p  class="welcome">One Account. Endless Flavor.</p>
+            <p class="subtext">Sign up for access to exclusive drinks and deals.</p>
+          </div>
+          <label for="a">Email:</label><br />
+          <input
+            type="email"
+            name="usermail"
+            id="email"
+            placeholder="Enter your Email"
+          /><br /><br />
+          <label for="b">Username:</label><br />
+          <input
+            type="text"
+            name="username"
+            id="name"
+            placeholder="Enter your name"
+          />
+          <br /><br />
+          <label for="c">Password:</label><br />
+          <input
+            type="password"
+            name="userpassword"
+            id="password"
+            placeholder="Enter your password"
+          /><br />
+          <button type="submit">Sign Up</button>
+          <p class="Already">
+            Already have account?<a href="login.html">login</a>
+          </p>
+          <p id="error-message" style="color: red"></p>
+        </div>
+      </fieldset>
+    </form>
+
+    <script>
+      let nameinput = document.getElementById("name");
+      let emailinput = document.getElementById("email");
+      let passwordinput = document.getElementById("password");
+
+      let sign = document.getElementById("signUpForm");
+      let alluser = JSON.parse(localStorage.getItem("alluser")) || [];
+      sign.addEventListener("submit", (event) => {
+        event.preventDefault();
+        let nameinputvalue = nameinput.value.trim();
+        let emailinputvalue = emailinput.value.trim();
+        let passwordinputvalue = passwordinput.value.trim();
+        if (
+          nameinputvalue === "" ||
+          emailinputvalue === "" ||
+          passwordinputvalue === ""
+        ) {
+          return alert(" pls fill the details");
+        }
+
+        const details = {
+          name: nameinputvalue,
+          email: emailinputvalue,
+          password: passwordinputvalue,
+        };
+
+        alluser.push(details);
+        localStorage.setItem("alluser", JSON.stringify(alluser));
+        location.href = "login.html";
+      });
+    </script>
+  </body>
+</html>

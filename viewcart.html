@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- <style>
+          *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  thead {
+    background-color: green;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tbody tr:hover {
+    background-color: #e9f5ff;
+    transition: background-color 0.3s ease;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+  }
+
+  .delete-btn{
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+
+  td[colspan='5'] {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    padding: 20px;
+  }th{
+    width: 100px;
+  }
+    * {
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+      }html{
+        scroll-behavior: smooth;
+      }
+      .navbar-img{
+        width: 50px;
+        height: 50px;
+            top: 0px;
+            border-radius: 40px;
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+      
+        padding: 10px 30px;
+        background-color:white;;
+          width: 100%;
+            height: 80px;
+            align-items: center;
+            gap: 50px;
+            border: 2px solid  black;
+             position: sticky;
+            top: 0;
+            z-index: 10;
+        
+      }
+      .nav-left {
+        display: flex;
+        gap:20px;
+        align-items: center;
+      }
+
+      #nav-right {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+        
+        .nav-left>a{
+             text-decoration:none;
+            color: black;
+            font-family:Arial, sans-serif ;
+          
+        }
+
+      #search {
+       
+          width: 250px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: white;
+            padding: 5px 5px;
+            color: black;
+            border: 2px solid white;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+      } .se{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+           left: 91%;
+           top: 25px;
+      }
+        #count{
+            position: relative;
+        }
+       #cart{
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+       }
+        #cart-count{
+             position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 6px; 
+    border-radius: 50%;
+        }
+        .star{
+            background-color: #198754;
+            width: 100%;
+            height: 40px;
+            color: white;
+             display: flex;
+             font-family: "Alegreya SC", serif;
+             align-items: center;
+           padding:20px;
+            position: relative;
+            
+        }.star b{
+           position: absolute;
+           top: 20px;
+           left: 100px;
+           font-size: 25px;
+           cursor: pointer;
+        }
+        .know{
+            position: absolute;
+           left: 90%;
+           top: 20px;
+           color: white;
+           text-decoration: none;
+  }
+  #footer{
+    margin-left: 933px;
+    display: flex;
+    flex-direction: column;
+    justify-content:right;
+    align-items: center;
+    padding: 10px 10px;
+    gap: 20px;
+     background-color: white;
+     box-shadow: 
+    4px 0 5px -2px rgba(0,0,0,0.2),   /* right */
+   -4px 0 5px -2px rgba(0,0,0,0.2),   /* left */
+    0 4px 5px -2px rgba(0,0,0,0.2),   /* bottom */
+    0 -4px 5px -2px rgba(0,0,0,0.2);  /* top */
+    position: relative;
+    width: 600px;
+    height: 300px;
+    
+  }
+pre{
+ 
+ font-size:large ;
+ 
+  
+}
+#paynow{
+  background-color:green;
+  color:white;
+  width: 100px;
+  height: 40px;
+  
+   position: absolute;
+   top:220px;
+    right: 60px;
+}#paynow:hover{
+  background-color: rgb(78, 185, 108);
+}
+
+#split{
+  width: 100px;
+}
+    </style> -->
+</head>
+<body>
+   <div class="nav">
+   
+      <div class="nav-left">
+       
+       <a href="">
+          <img class="navbar-img"
+          
+            src="../image/starbucks.png"
+            alt=""
+          /> </a>
+        <a class="n" href="./home.html">Home</a><a class="n" href="#selectors">Menu</a
+        ><a class="n" href="#world">Coffe </a><a class="n" href="#footer">About us</a
+        ><a class="n" href="#footer">Contact us</a>
+        
+      </div>
+      <div id="nav-right">
+        <input
+          type="text"
+          placeholder="looking for something specific?"
+          id="search"
+        />
+        <a href="">
+          <img class="se" src="../image/search.png" alt="" />
+        </a>
+
+       
+        <div id="count">
+        <img id="cart" src="../image/cart.png" alt="" />
+        <span id="cart-count"></span>
+        </div>
+      </div>
+    </div>
+    <br>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th style="width: 50px;">s.no</th>
+        <th>name</th>
+        <th>image</th>
+        <th>price</th>
+        <th>delete</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <div id="footer">
+     
+    
+     <pre><b>Total Payable:                                      </b></pre>
+
+     <pre>Handling Charges:                           ₹180.000</pre>
+     <pre>CGST:                                       ₹60.000</pre>
+     <pre>SGST:                                       ₹60.000</pre>
+      <pre id="totalprice">Total Payable:</pre> 
+  <button id="paynow" onclick="clickMe()">PayNow</button>
+  </div>
+    <script>
+
+   
+      
+            
+      
+        let keyvalues=["bestdeals","eatItems","drinkitems","coffeItems","homeItems","marchandise"]
+        console.log(keyvalues)
+      
+
+  
+
+        let viewcart=[]
+
+        function loadAllCartItems(){
+            viewcart=[]
+            keyvalues.forEach(key =>{
+                const data = JSON.parse(localStorage.getItem(key))||[];
+                viewcart=viewcart.concat(data)
+            });
+            console.log(viewcart)
+              localStorage.setItem("countdata",JSON.stringify(viewcart))
+  
+               document.getElementById("cart-count").textContent=viewcart.length
+  displayItemsInTable();
+
+        }
+        function  displayItemsInTable(){
+            const tbody= document.querySelector("tbody");
+            tbody.innerHTML="";
+            let total= 0;
+            if (viewcart.length===0){
+                tbody.innerHTML="<tr><td colspan='5'>Cart is Empty</td></tr>";
+                return;
+            }
+            viewcart.forEach((item,index)=>{
+                total+=item.price ||0;
+                tbody.innerHTML+=`
+                <tr>
+                    <td>${index+1}</td>
+                    <td>${item.name}</td>
+                    <td><img src="${item.image}" width="50"/></td>
+                    <td>${item.price}₹</td>
+                    <td><button id="delete-btn"  onclick="removeItem(${index})">Delete</button></td>
+                    </tr>
+                
+                `;
+                  })
+                document.getElementById("totalprice").innerHTML=  
+                    "TotalPrice:                                   ₹" + (180 + 60 + 60 + total).toFixed(2);
+        }
+        function removeItem(indexToDelete){
+            let count =0;
+            for (let key of keyvalues){
+                let data=JSON.parse(localStorage.getItem(key))||[]
+
+                if (indexToDelete < count + data.length){
+
+                  const realIndex = indexToDelete - count;
+                 data.splice(realIndex, 1);
+                 localStorage.setItem(key,JSON.stringify(data))
+                 break;
+                }
+         
+                 count +=data.length; 
+
+            }  
+  loadAllCartItems();
+                   }
+    
+        
+loadAllCartItems();
+    function clickMe(){
+      alert("one last step away to get it..")
+      location.href="./payment.html"
+
+    }
+    </script>
+</body>
+</html>
