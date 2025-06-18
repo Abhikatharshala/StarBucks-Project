@@ -294,7 +294,7 @@
 
 
 
-const cartcount=JSON.parse(localStorage.getItem("countdata"))
+const cartcount=JSON.parse(localStorage.getItem("countdata"))||[];
        console.log(cartcount)
        document.getElementById("cart-count").textContent=cartcount.length
    
